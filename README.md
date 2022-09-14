@@ -6,11 +6,13 @@ Con l'app **MyWeather** è possibile:
  - Vedere le informazioni meteo della posizione attuale di oggi e dei prossimi 3 giorni <br />
  ![](https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-IOS/blob/main/gif%20main%20scene.gif)
  - Cercare una città e vedere le sue previsioni meteo <br />
-  // inserire gif
- - Salvare una città in una lista di preferiti <br />
- // inserire gif
+ ![](https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-IOS/blob/main/gif%20search%20city.gif)
+ - Salvare una città in una lista dei preferiti <br />
+![](https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-IOS/blob/main/gif%20add%20favourite.gif)
+ - Selezionare una città della lista dei preferiti <br />
+ ![](https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-IOS/blob/main/gif%20fav%20list.gif)
  - Visualizzare le città preferite in una mappa e vedere il meteo del giorno tramite un'annotazione <br />
- // inserire gif
+ ![](https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-IOS/blob/main/gif%20map%20view%20.gif)
 
 ## Uno sguardo da vicino
 L'applicazione è basata sul modello **MVC**: **M**odel, **V**iew, **C**ontroller.
