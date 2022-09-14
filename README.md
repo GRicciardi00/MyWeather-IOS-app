@@ -26,7 +26,7 @@ L'utilizzo dell'API avviene tramite **serializzazione JSON**.
 
 L'utilizzo di un **UInavigation controller** permette di gestire in maniera rapida ed intuitiva l'uso di views multiple mediante la struttura a stack (Logica LIFO). <br />
 
-<img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-IOS/blob/main/Screenshots/Storyboard.png width="20%" height="20%">
+<img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-IOS/blob/main/Screenshots/Storyboard.png width="30%" height="30%">
 
 Sono presenti 4 view controller:
  -  **MyWeatherTableViewController**: è un *UITableViewController statico*, primo controller dello stack, si occupa di mostrare il meteo attuale e le previsioni dei giorni futuri della città (che può essere stata seleziona oppure ricavata dalla posizione attuale).<br />
@@ -40,7 +40,7 @@ Sono presenti 4 view controller:
  I risultati sono visualizzati su una *UITableView dinamica* con una sezione e numero di righe pari al numero di risultati ottenuti dalla ricerca. E' presente un listener che cattura il click su una cella della TableView che permette di mandare una notifica al MyWeatherTableViewController che stanzia una richiesta al Forecast per mostrare il meteo. <br />
  Una volta terminata l'operazione il SearchCityViewController riceve a sua volta una notifica per eseguire il pop di se stesso dallo stack del NavigationController. <br />
  
- <img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-IOS/blob/main/Screenshots/FavCitiesVC.png width="50" height="50">
+ <img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-IOS/blob/main/Screenshots/FavCitiesVC.png width="20%" height="20%">
  
  -**FavouritesCitiesTableViewController**: è il View Controller che si occupa di mostrare all'utente la lista delle città preferite, si tratta di una *TableView dinamica* con una sezione e numero di righe pari al numero di città presenti negli array mandati da MyWeatherTableViewController durante la segue.<br />
  Quando un'utente seleziona una cella della table view viene applicato lo stesso procedimento spiegato prima per notificare al MyWeatherTableViewController di inizializzare l'oggetto Forecast ed eseguire la transizione per mostrare la view.
