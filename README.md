@@ -34,7 +34,7 @@ Sono presenti 4 view controller:
  Durante l'avvio della view (metodo "*viewDidLoaded*") il controller recupera tramite file la lista delle città preferite (3 array che gestiscono nomi,latitudine e longitudine), da mandare tramite segue ai controller  (se i file non esistono vengono creati).<br />
  I tasti sulla *navigation bar* permettono di avviare le segues per i rispettivi view controller. <br />
  
- ![](https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-IOS/blob/main/Screenshots/mainVC.png width="50%" height="50%")
+ <img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-IOS/blob/main/Screenshots/mainVC.png width="50%" height="50%">
  
  - **SearchCityViewController**, viene chiamato tramite segues modale dal MyweatherTableViewController. E' una *UIView* che consente la ricerca della città su una **operation queue** che crea una *MKLocalSearchRequest* che si occupa di eseguire una *NaturalLanguageQuery* con la città inserita nell'apposita searchbar.<br />
  I risultati sono visualizzati su una *UITableView dinamica* con una sezione e numero di righe pari al numero di risultati ottenuti dalla ricerca. E' presente un listener che cattura il click su una cella della TableView che permette di mandare una notifica al MyWeatherTableViewController che stanzia una richiesta al Forecast per mostrare il meteo. <br />
