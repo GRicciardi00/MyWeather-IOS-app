@@ -161,7 +161,6 @@
 - (void)updateForecastView{
     if (self.forecast.city.name) //if forecast received data
     {
-        dispatch_semaphore_t sema = dispatch_semaphore_create(0);
         self.forecast.hasDisplayedForecastData = YES;
         //MAIN THREAD
         dispatch_async(dispatch_get_main_queue(), ^{
