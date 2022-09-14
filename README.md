@@ -23,7 +23,9 @@ Le classi *City*,*CityList* e *Forecast* costituiscono il model dell'applicazion
 L'utilizzo dell'API avviene tramite **serializzazione JSON**. 
 ### ViewController
 > Le *view* visualizzano i dati contenuti nel model e "catturano" l'interazione dell'utente con l'applicazione, i *controller* sono il cervello dell'applicazione: forniscono il collegamento tra view e model, gestiscono gli input dell'utente mandati dalla view e mandano al model eventuali aggiornamenti. <br />
+
 L'utilizzo di un **UInavigation controller** permette di gestire in maniera rapida ed intuitiva l'uso di views multiple mediante la struttura a stack (Logica LIFO). <br />
+
 ![](https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-IOS/blob/main/Screenshots/Storyboard.png)
 
 Sono presenti 4 view controller:
@@ -31,16 +33,23 @@ Sono presenti 4 view controller:
  Questa view attua la registrazione del *LocationManager* per ricavare la posizione attuale dell'utente e registra il controller all'ascolto delle notifiche mandate dalla classe *Forecast* una volta ultimata la richiesta delle informazioni meteo tramite API per aggiornare la view. <br />
  Durante l'avvio della view (metodo "*viewDidLoaded*") il controller recupera tramite file la lista delle città preferite (3 array che gestiscono nomi,latitudine e longitudine), da mandare tramite segue ai controller  (se i file non esistono vengono creati).<br />
  I tasti sulla *navigation bar* permettono di avviare le segues per i rispettivi view controller. <br />
+ 
  ![](https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-IOS/blob/main/Screenshots/mainVC.png)
+ 
  - **SearchCityViewController**, viene chiamato tramite segues modale dal MyweatherTableViewController. E' una *UIView* che consente la ricerca della città su una **operation queue** che crea una *MKLocalSearchRequest* che si occupa di eseguire una *NaturalLanguageQuery* con la città inserita nell'apposita searchbar.<br />
  I risultati sono visualizzati su una *UITableView dinamica* con una sezione e numero di righe pari al numero di risultati ottenuti dalla ricerca. E' presente un listener che cattura il click su una cella della TableView che permette di mandare una notifica al MyWeatherTableViewController che stanzia una richiesta al Forecast per mostrare il meteo. <br />
  Una volta terminata l'operazione il SearchCityViewController riceve a sua volta una notifica per eseguire il pop di se stesso dallo stack del NavigationController. <br />
+ 
  ![](https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-IOS/blob/main/Screenshots/FavCitiesVC.png)
+ 
  -**FavouritesCitiesTableViewController**: è il View Controller che si occupa di mostrare all'utente la lista delle città preferite, si tratta di una *TableView dinamica* con una sezione e numero di righe pari al numero di città presenti negli array mandati da MyWeatherTableViewController durante la segue.<br />
  Quando un'utente seleziona una cella della table view viene applicato lo stesso procedimento spiegato prima per notificare al MyWeatherTableViewController di inizializzare l'oggetto Forecast ed eseguire la transizione per mostrare la view.
 <br />
+
  ![](https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-IOS/blob/main/Screenshots/FavCitiesVC.png)
+ 
  - **FavouritesMapViewController**: utilizzato per mostrare la mappa all'utente con le annotazioni posizionate nelle città salvate nei preferiti. Si tratta di un *UIViewController* con all'interno una *MapView*. <br />
 Per creare le annotazioni il ViewController riceve durante la segue gli array delle città preferite salvate su file edisegna un'annotazione per ogni coppia di coordinate della città preferite. <br />
 E' presente un Listener sul tocco di un'annotazione che procede con la generazione di una richiesta meteo del giorno attuale nella città selezionata.  <br />
+
 ![](https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-IOS/blob/main/Screenshots/mapVC.png)
