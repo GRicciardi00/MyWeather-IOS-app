@@ -1,5 +1,5 @@
 # MY WEATHER
-Il progetto realizzato per la parte IOS del corso MobDev consiste in un'applicazione meteo in *objective c* utilizzando *Xcode*.
+Progetto realizzato per la parte IOS del corso MobDev, consiste in un'applicazione meteo in *objective c* utilizzando *Xcode*.
 ## Features principali ed esempi applicativi
 Con l'app **MyWeather** è possibile:
 
@@ -33,8 +33,8 @@ Sono presenti 4 view controller:
  \\inserire immagine SearhCityViewController 
  -**FavouritesCitiesTableViewController**: è il View Controller che si occupa di mostrare all'utente la lista delle città preferite, si tratta di una *TableView dinamica* con una sezione e numero di righe pari al numero di città presenti negli array mandati da MyWeatherTableViewController durante la segue.<br />
  Quando un'utente seleziona una cella della table view viene applicato lo stesso procedimento spiegato prima per notificare al MyWeatherTableViewController di inizializzare l'oggetto Forecast ed eseguire la transizione per mostrare la view.
- \\inserire immagine FavouritesCitiesTableViewController
+ \\inserire immagine FavouritesCitiesTableViewController <br />
+
  -**FavouritesMapViewController**: utilizzato per mostrare la mappa all'utente con le annotazioni posizionate nelle città salvate nei preferiti. Si tratta di un *UIViewController* con all'interno una *MapView*. <br />
 Per creare le annotazioni il ViewController riceve durante la segue gli array delle città preferite salvate su file edisegna un'annotazione per ogni coppia di coordinate della città preferite. <br />
 E' presente un Listener sul tocco di un'annotazione che procede con la generazione di una richiesta meteo del giorno attuale nella città selezionata.
-   
