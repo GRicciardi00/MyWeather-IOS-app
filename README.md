@@ -15,13 +15,13 @@ Con l'app **MyWeather** è possibile:
 ## Uno sguardo da vicino
 L'applicazione è basata sul modello **MVC**: **M**odel, **V**iew, **C**ontroller.
 ### Model
-> Blockquote Il *model* si occupa di definire i dati dell'applicazione. <br />
+>Il *model* si occupa di definire i dati dell'applicazione. <br />
 Le classi *City*,*CityList* e *Forecast* costituiscono il model dell'applicazione. Ho deciso di usare una classe Forecast per gestire in modo **asincrono** l'acquisizione delle informazioni meteo tramite l'API *open.meteo* e garantire un utilizzo fluido dell'applicazione all'utente. <br />
 L'utilizzo dell'API avviene tramite **serializzazione JSON**. 
 ### ViewController
-> Blockquote Le *view* visualizzano i dati contenuti nel model e "catturano" l'interazione dell'utente con l'applicazione, i *controller* sono il cervello dell'applicazione: forniscono il collegamento tra view e model, gestiscono gli input dell'utente mandati dalla view e mandano al model eventuali aggiornamenti. <br />
-L'utilizzo di un **UInavigation controller** permette di gestire in maniera rapida ed intuitiva l'uso di views multiple mediante la struttura a stack (Logica LIFO). <br />
+> Le *view* visualizzano i dati contenuti nel model e "catturano" l'interazione dell'utente con l'applicazione, i *controller* sono il cervello dell'applicazione: forniscono il collegamento tra view e model, gestiscono gli input dell'utente mandati dalla view e mandano al model eventuali aggiornamenti. <br />
 //immagine storyboard
+L'utilizzo di un **UInavigation controller** permette di gestire in maniera rapida ed intuitiva l'uso di views multiple mediante la struttura a stack (Logica LIFO). <br />
 Sono presenti 4 view controller:
  -  **MyWeatherTableViewController**: è un *UITableViewController statico*, primo controller dello stack, si occupa di mostrare il meteo attuale e le previsioni dei giorni futuri della città (che può essere stata seleziona oppure ricavata dalla posizione attuale).<br />
  Questa view attua la registrazione del *LocationManager* per ricavare la posizione attuale dell'utente e registra il controller all'ascolto delle notifiche mandate dalla classe *Forecast* una volta ultimata la richiesta delle informazioni meteo tramite API per aggiornare la view. <br />
