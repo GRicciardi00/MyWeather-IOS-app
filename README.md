@@ -4,7 +4,7 @@ Progetto realizzato per la parte IOS del corso MobDev, consiste in un'applicazio
 Con l'app **MyWeather** è possibile:
 
  - Vedere le informazioni meteo della posizione attuale di oggi e dei prossimi 3 giorni <br />
- //inserire gi
+ ![](https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-IOS/blob/main/gif%20main%20scene.gif)
  - Cercare una città e vedere le sue previsioni meteo <br />
   // inserire gif
  - Salvare una città in una lista di preferiti <br />
