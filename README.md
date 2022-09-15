@@ -46,7 +46,7 @@ Sono presenti 4 view controller:
  Quando un'utente seleziona una cella della table view viene applicato lo stesso procedimento spiegato prima per notificare al MyWeatherTableViewController di inizializzare l'oggetto Forecast ed eseguire la transizione per mostrare la view.
 <br />
 
- <img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-IOS/blob/main/Screenshots/FavCitiesVC.png width="20%" height="20%">
+ <img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-IOS/blob/main/Screenshots/SearchVC.png width="20%" height="20%">
  
  - **FavouritesMapViewController**: utilizzato per mostrare la mappa all'utente con le annotazioni posizionate nelle città salvate nei preferiti. Si tratta di un *UIViewController* con all'interno una *MapView*. <br />
 Per creare le annotazioni il ViewController riceve durante la segue gli array delle città preferite salvate su file edisegna un'annotazione per ogni coppia di coordinate della città preferite. <br />
