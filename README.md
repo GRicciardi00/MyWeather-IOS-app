@@ -50,7 +50,7 @@ Sono presenti 4 view controller:
  <img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-IOS/blob/main/Screenshots/SearchVC.png width="20%" height="20%">
  
  - **FavouritesMapViewController**: utilizzato per mostrare la mappa all'utente con le annotazioni posizionate nelle città salvate nei preferiti. Si tratta di un *UIViewController* con all'interno una *MapView*. <br />
-Per creare le annotazioni il ViewController riceve durante la segue gli array delle città preferite salvate su file edisegna un'annotazione per ogni coppia di coordinate della città preferite. <br />
-E' presente un Listener sul tocco di un'annotazione che procede con la generazione di una richiesta meteo del giorno attuale nella città selezionata.  <br />
+Per creare le annotazioni il ViewController riceve durante la segue gli array delle città preferite salvate su file e disegna un'annotazione per ogni coppia di coordinate della città preferite. <br />
+E' presente un Listener sul tocco di un'annotazione che procede con la generazione di una richiesta meteo del giorno attuale nella città selezionata e la mostra all'utente.  <br />
 
 <img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-IOS/blob/main/Screenshots/mapVC.png width="20%" height="20%">
