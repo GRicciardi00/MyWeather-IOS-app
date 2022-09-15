@@ -1,5 +1,5 @@
 # MY WEATHER
-Progetto per la parte IOS del corso MobDev, consiste in un'applicazione meteo in *objective c* realizzata *Xcode*.
+Progetto per la parte IOS del corso MobDev, consiste in un'applicazione meteo in *objective c* realizzata con *Xcode*.
 ## Features principali ed esempi applicativi
 Con l'app **MyWeather** è possibile:
 
