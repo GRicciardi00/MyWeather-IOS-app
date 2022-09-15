@@ -39,7 +39,7 @@ Sono presenti 4 view controller:
  - **SearchCityViewController**, viene chiamato tramite segues modale dal MyweatherTableViewController. E' una *UIView* che consente la ricerca della città su una **operation queue** che crea una *MKLocalSearchRequest* che si occupa di eseguire una *NaturalLanguageQuery* con la città inserita nell'apposita searchbar.<br />
  I risultati sono visualizzati su una *UITableView dinamica* con una sezione e numero di righe pari al numero di risultati ottenuti dalla ricerca. E' presente un listener che cattura il click su una cella della TableView che permette di mandare una notifica al MyWeatherTableViewController che stanzia una richiesta al Forecast per mostrare il meteo. <br />
  Una volta terminata l'operazione il SearchCityViewController riceve a sua volta una notifica per eseguire il pop di se stesso dallo stack del NavigationController. <br />
- **N.B**: questa operazione di scambio notifiche poteva essere sostituita con l'implementazione di un delegate (tramite definizione di un protocollo) del viewcontroller che segnalava la selezione di una città).
+ **N.B**: questa operazione di scambio notifiche poteva essere sostituita con l'implementazione di un delegate (tramite definizione di un protocollo) del viewcontroller che segnalava la selezione di una città.
  
  <img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-IOS/blob/main/Screenshots/FavCitiesVC.png width="20%" height="20%">
  
